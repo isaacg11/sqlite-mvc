@@ -6,7 +6,7 @@ const handlebars = require('express-handlebars').create({
 });
 const bodyParser = require('body-parser');
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('/Users/isaacgrey/Desktop/test/Chinook_Sqlite_AutoIncrementPKs.sqlite');
+const db = new sqlite3.Database('YOUR_DB_PATH');
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
